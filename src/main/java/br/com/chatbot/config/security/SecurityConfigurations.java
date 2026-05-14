@@ -31,8 +31,14 @@ public class SecurityConfigurations {
                                                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                                 .authorizeHttpRequests(auth -> auth
                                                 .requestMatchers(
-                                                                "/login",
-                                                                "/health-check")
+
+                                        "/login",
+                                        "/health-check",
+                                        "/error",
+                                        "/v3/api-docs",
+                                        "/v3/api-docs/**",
+                                        "/swagger-ui/**",
+                                        "/swagger-ui.html")
                                                 .permitAll()
 
                                                 .requestMatchers(HttpMethod.GET,

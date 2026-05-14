@@ -16,8 +16,7 @@ import br.com.chatbot.exception.type.loginauth.TokenValidationException;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.servlet.http.HttpServletRequest;
 
-@RestControllerAdvice(basePackages = "br.com.autoescola.adapter.in.controller")
-@Order(Ordered.LOWEST_PRECEDENCE)
+@RestControllerAdvice(basePackages = "br.com.chatbot.adapter.in.controller")@Order(Ordered.LOWEST_PRECEDENCE)
 public class TratadorGlobalDeExcecoes {
 
     @ExceptionHandler(EntityNotFoundException.class)
