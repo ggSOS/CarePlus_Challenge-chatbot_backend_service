@@ -106,7 +106,7 @@ graph LR
     Create Database chatbot;
     ```
 
-- Adicionar variáveis de ambiente:
+- Variáveis de ambiente:
   - DB_PASSWORD (obrigatório)
   - DB_URL (conforme necessário)
   - DB_USER (conforme necessário)
@@ -114,7 +114,7 @@ graph LR
 
 A aplicação sobe na porta `8080`.
 
-Alterar "spring.profiles.active=prod" para "spring.profiles.active=dev" em "src\main\resources\application.properties" caso deseje visualizar melhor os logs de cada requisição(não recomendado para ambiente de produção)
+Alterar entre `spring.profiles.active=prod` e `spring.profiles.active=dev` em `src\main\resources\application.properties` para escolher o modo de produção(seguro) ou de monitoramento por log + documentação swagger(não seguro), respectivamente.
 
 ## Logins Registrados para Autenticação
 
