@@ -96,24 +96,25 @@ graph LR
 - MySQL rodando localmente
   - iniciar servidor por cmd
 
-  ```powershell
-      net start mysql95
-  ```
-
-  - Alterar Username e Password em application.properties
-
-  ```properties
-  spring.datasource.url=jdbc:mysql://localhost/chatbot
-  spring.datasource.username=root
-  spring.datasource.password=sua_senha
-  api.security.token.secret=${JWT_TOKEN:seu_secret}
-  ```
+    ```powershell
+    net start mysql95
+    ```
 
   - criar banco de dados
-    - Drop Database chatbot;
-    - Create Database chatbot;
+    ```sql
+    Drop Database if Exists chatbot;
+    Create Database chatbot;
+    ```
+
+- Adicionar variáveis de ambiente:
+  - DB_PASSWORD (obrigatório)
+  - DB_URL (conforme necessário)
+  - DB_USER (conforme necessário)
+  - JWT_TOKEN (conforme necessário)
 
 A aplicação sobe na porta `8080`.
+
+Alterar "spring.profiles.active=prod" para "spring.profiles.active=dev" em "src\main\resources\application.properties" caso deseje visualizar melhor os logs de cada requisição(não recomendado para ambiente de produção)
 
 ## Logins Registrados para Autenticação
 
