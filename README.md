@@ -18,6 +18,7 @@ Serviço de back-end para registro de conversas em um chatbot
 - MySQL
 - Flyway
 - Lombok
+- Swagger(OpenAPI)
 
 ## Estrutura do Baco de Dados
 
