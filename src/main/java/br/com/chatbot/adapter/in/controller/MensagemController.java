@@ -17,12 +17,14 @@ import org.springframework.web.util.UriComponentsBuilder;
 import br.com.chatbot.adapter.in.controller.request.mensagem.MensagemCreateDTO;
 import br.com.chatbot.adapter.in.controller.response.mensagem.MensagemResponseDTO;
 import br.com.chatbot.application.core.usecase.MensagemService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/mensagens")
+@Tag(name = "Mensagens", description = "Endpoints para gerenciamento das Mensagens")
 public class MensagemController {
     private final MensagemService service;
 

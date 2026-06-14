@@ -19,12 +19,14 @@ import br.com.chatbot.adapter.in.controller.request.usuario.UsuarioCreateDTO;
 import br.com.chatbot.adapter.in.controller.response.usuario.UsuarioDetailedResponseDTO;
 import br.com.chatbot.adapter.in.controller.response.usuario.UsuarioResponseDTO;
 import br.com.chatbot.application.core.usecase.UsuarioService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/usuarios")
+@Tag(name = "Usuarios", description = "Endpoints para gerenciamento dos Usuarios")
 public class UsuarioController {
 
     private final UsuarioService service;

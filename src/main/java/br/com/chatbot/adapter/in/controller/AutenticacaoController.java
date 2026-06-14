@@ -13,12 +13,14 @@ import br.com.chatbot.adapter.in.controller.request.authlogin.AuthLoginCheckDTO;
 import br.com.chatbot.application.core.domain.model.AuthLogin;
 import br.com.chatbot.config.security.dto.DadosTokenJWT;
 import br.com.chatbot.config.security.service.TokenService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/login")
+@Tag(name = "- Autenticação", description = "Autenticação para acesso aos Endpoint")
 public class AutenticacaoController {
 
     private final AuthenticationManager manager;

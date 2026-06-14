@@ -18,12 +18,14 @@ import org.springframework.web.util.UriComponentsBuilder;
 import br.com.chatbot.adapter.in.controller.request.authlogin.AuthLoginCreateDTO;
 import br.com.chatbot.adapter.in.controller.response.authlogin.AuthLoginResponseDTO;
 import br.com.chatbot.application.core.usecase.AuthLoginService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/auth-logins")
+@Tag(name = "Auth Logins", description = "Endpoints para gerenciamento das Autenticações")
 public class AuthLoginController {
 
     private final AuthLoginService service;
