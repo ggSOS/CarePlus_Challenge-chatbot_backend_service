@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Logical" id="99250688-56FD-31DF-3CAE-76FC7330C89A">
+<createdBy>Gustavo</createdBy>
+<modifiedBy>Gustavo</modifiedBy>
+<createdTime>2026-05-08 07:00:15 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="0CC509A7-6EFE-C4DD-D852-68AC8CCD2771" otype="Entity" vid="D7B8788B-9EC5-A080-7A51-7280D712149E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="245" y="132" width="105" height="82"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="12AAD1F6-8475-2DDF-7272-39FC9FE5069F" otype="Entity" vid="24002A21-5EAE-D7B8-5160-5E036EB934FC">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="15" y="142" width="90" height="68"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="69D234EE-3FEA-D351-3B9C-D873F8ED68B9" otype="Entity" vid="D6C4B610-1BED-6D2D-BAC3-258613E75A55">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="255" y="29" width="92" height="82"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="82138A0E-EFF5-9457-307B-38D944DF6F82" otype="Note" vid="F0C4A7D7-55A4-701D-775A-F3E94E8D7C6B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="17" y="14" width="216" height="114"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-6697729</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>          -   CarePlus Challenge   -
+          chatbot_backend_service
+              Modelo Conceitual
+
+https://github.com/ggSOS/CarePlus_Challenge-chatbot_backend_service.git</comment>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="C153470E-DE49-8BC8-F67E-3FD0C08D9C49" otype="Relation" vid_source="24002A21-5EAE-D7B8-5160-5E036EB934FC" vid_target="D7B8788B-9EC5-A080-7A51-7280D712149E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="105" y="176"/>
+<point x="245" y="176"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

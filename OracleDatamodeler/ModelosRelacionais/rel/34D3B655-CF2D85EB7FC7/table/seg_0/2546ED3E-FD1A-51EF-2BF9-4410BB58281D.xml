@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2546ED3E-FD1A-51EF-2BF9-4410BB58281D" name="mensagens">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:16:14 UTC</createdTime>
+<generatorID>0CC509A7-6EFE-C4DD-D852-68AC8CCD2771</generatorID>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<ordsAlias>mensagem</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="C8B695B3-F879-2C01-ECBD-C6938E3FE21A">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:16:14 UTC</createdTime>
+<generatorID>C731EED9-0B7A-9A91-E475-A5FBB9BC6F94</generatorID>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="role" id="C78ED46C-2E8E-6233-4165-EC58320D516F">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:16:14 UTC</createdTime>
+<generatorID>315500E4-AF48-45E2-4496-E6EFC5761210</generatorID>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="content" id="3A8A588C-3FC8-A253-2C9C-C8314152D859">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:16:14 UTC</createdTime>
+<generatorID>5899F5D7-1CFB-A3A6-4E6A-6307B9144447</generatorID>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_hora" id="B8A2FD33-B8FC-903C-E238-4C2C0CA52795">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:16:14 UTC</createdTime>
+<generatorID>A3ACDF20-7C8F-37BC-0BD2-31D1C65E6FC0</generatorID>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_usuario" id="055DF54A-980D-85DF-4F96-A847AB9F5286">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:16:14 UTC</createdTime>
+<generatorID>15409B8D-2103-CD1E-DB1E-A3C8B8469A40</generatorID>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4501C453-A576-A5D7-921F-809A0D356FCA" name="mensagem_PK">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:16:14 UTC</createdTime>
+<generatorID>D7F0FEA7-8CA8-3CFD-99F2-832D532FE01C</generatorID>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8B695B3-F879-2C01-ECBD-C6938E3FE21A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35F34B7A-E17C-489B-7D22-03308D2E012E" name="mensagem_usuario_FK">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:16:14 UTC</createdTime>
+<generatorID>C153470E-DE49-8BC8-F67E-3FD0C08D9C49</generatorID>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

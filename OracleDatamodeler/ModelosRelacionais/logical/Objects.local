@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="69D234EE-3FEA-D351-3B9C-D873F8ED68B9" name="auth_logins" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="A0F96C6E-00E1-8892-454E-8713409FFDBD" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="0CC509A7-6EFE-C4DD-D852-68AC8CCD2771" name="mensagens" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="A0F96C6E-00E1-8892-454E-8713409FFDBD" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="12AAD1F6-8475-2DDF-7272-39FC9FE5069F" name="usuarios" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="A0F96C6E-00E1-8892-454E-8713409FFDBD" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="C153470E-DE49-8BC8-F67E-3FD0C08D9C49" name="possui" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="A0F96C6E-00E1-8892-454E-8713409FFDBD" propertySourceId="12AAD1F6-8475-2DDF-7272-39FC9FE5069F" propertyTargetId="0CC509A7-6EFE-C4DD-D852-68AC8CCD2771"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

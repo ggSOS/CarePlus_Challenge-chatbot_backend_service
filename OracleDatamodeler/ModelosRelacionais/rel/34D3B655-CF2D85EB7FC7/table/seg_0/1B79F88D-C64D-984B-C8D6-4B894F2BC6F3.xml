@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B79F88D-C64D-984B-C8D6-4B894F2BC6F3" name="auth_logins">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-06-14 20:04:30 UTC</createdTime>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="3C94C38C-3201-7524-6590-4496E8E3DFB6">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-06-14 20:05:05 UTC</createdTime>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="login" id="5ED81C26-2F99-7B85-6527-E4DE41BD72FE">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-06-14 20:05:23 UTC</createdTime>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="senha" id="116FAF54-7F2F-B7C1-FD1B-681CF4BC5FE8">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-06-14 20:05:36 UTC</createdTime>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="perfil" id="9BD97343-9F37-510C-EAAF-ADFDAEC4C455">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-06-14 20:05:53 UTC</createdTime>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="94FA956D-CA92-24DD-EFB8-60530F5F990B" name="auth_logins_PK">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-06-14 20:05:05 UTC</createdTime>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C94C38C-3201-7524-6590-4496E8E3DFB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

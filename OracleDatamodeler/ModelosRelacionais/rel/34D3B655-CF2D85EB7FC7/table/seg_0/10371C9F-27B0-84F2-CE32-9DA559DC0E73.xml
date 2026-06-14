@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10371C9F-27B0-84F2-CE32-9DA559DC0E73" name="usuarios">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:16:14 UTC</createdTime>
+<generatorID>12AAD1F6-8475-2DDF-7272-39FC9FE5069F</generatorID>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<ordsAlias>usuario</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="47DCD7EA-44DB-F94C-B393-7CA8DCE9B7FD">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:16:14 UTC</createdTime>
+<generatorID>C9D455EB-B52D-9230-9694-F71F30B2EEBF</generatorID>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="celular" id="2D0A5A45-9C92-D1EA-2C65-C902250A3EF7">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:16:14 UTC</createdTime>
+<generatorID>E9028918-2EDE-40C5-F9EE-CF1F6CA71318</generatorID>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ativo" id="9CBAD043-2DCE-BD61-57CA-9C71AE1A1039">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:45:39 UTC</createdTime>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="773CFB74-9BE2-7382-B7DB-4FEDF304753C" name="usuario_PK">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:16:14 UTC</createdTime>
+<generatorID>35BDC9D6-6121-C21C-F240-7C394C46352E</generatorID>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47DCD7EA-44DB-F94C-B393-7CA8DCE9B7FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

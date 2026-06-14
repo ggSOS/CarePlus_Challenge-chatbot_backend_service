@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="1B79F88D-C64D-984B-C8D6-4B894F2BC6F3" name="auth_logins" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="34D3B655-AB51-71D2-2DB1-CF2D85EB7FC7" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="2546ED3E-FD1A-51EF-2BF9-4410BB58281D" name="mensagens" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="34D3B655-AB51-71D2-2DB1-CF2D85EB7FC7" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="10371C9F-27B0-84F2-CE32-9DA559DC0E73" name="usuarios" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="34D3B655-AB51-71D2-2DB1-CF2D85EB7FC7" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="411163A2-AE3D-D80F-6A15-E466A052B33B" name="mensagem_usuario_FK" seqName="seg_0" containerID="2546ED3E-FD1A-51EF-2BF9-4410BB58281D" refContainerID="10371C9F-27B0-84F2-CE32-9DA559DC0E73" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="34D3B655-AB51-71D2-2DB1-CF2D85EB7FC7" propertySourceId="10371C9F-27B0-84F2-CE32-9DA559DC0E73" propertyTargetId="2546ED3E-FD1A-51EF-2BF9-4410BB58281D"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

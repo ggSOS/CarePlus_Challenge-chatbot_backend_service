@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="12AAD1F6-8475-2DDF-7272-39FC9FE5069F" name="usuarios">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:00:15 UTC</createdTime>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<engineerTo>
+<item key="34D3B655-AB51-71D2-2DB1-CF2D85EB7FC7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="C9D455EB-B52D-9230-9694-F71F30B2EEBF">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:02:34 UTC</createdTime>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<engineerTo>
+<item key="34D3B655-AB51-71D2-2DB1-CF2D85EB7FC7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="celular" id="E9028918-2EDE-40C5-F9EE-CF1F6CA71318">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:03:14 UTC</createdTime>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<engineerTo>
+<item key="34D3B655-AB51-71D2-2DB1-CF2D85EB7FC7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ativo" id="0597B0C0-DD67-A542-4BB3-567C8AB35634">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:44:40 UTC</createdTime>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<engineerTo>
+<item key="34D3B655-AB51-71D2-2DB1-CF2D85EB7FC7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="35BDC9D6-6121-C21C-F240-7C394C46352E" name="usuario PK">
+<createdBy>Gustavo</createdBy>
+<createdTime>2026-05-08 07:03:11 UTC</createdTime>
+<ownerDesignName>ModelosRelacionais</ownerDesignName>
+<engineerTo>
+<item key="34D3B655-AB51-71D2-2DB1-CF2D85EB7FC7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C9D455EB-B52D-9230-9694-F71F30B2EEBF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
