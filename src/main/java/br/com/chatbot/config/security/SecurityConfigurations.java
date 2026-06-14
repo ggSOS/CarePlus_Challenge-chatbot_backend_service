@@ -41,7 +41,7 @@ public class SecurityConfigurations {
 
                                                 .requestMatchers(HttpMethod.GET,
                                                                 "/mensagens/**")
-                                                .permitAll()
+                                                .hasAnyRole("USER", "ADMIN", "OWNER")
 
                                                 .requestMatchers(
                                                                 "/mensagens/**",
