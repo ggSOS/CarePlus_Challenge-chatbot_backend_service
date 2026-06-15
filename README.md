@@ -10,15 +10,27 @@ Serviço de back-end para registro de conversas em um chatbot
 - rm554223 - Pedro Henrique Mello
 
 ## Tecnologias
-
-- Java 17+
+#### Linguagem
+- Java 21
+#### Framework
 - Spring Boot
+#### Segurança
 - Spring Security + JWT
+- BCrypt Password Encoder
+#### Persistência
 - Spring Data JPA
+- Hibernate
 - MySQL
 - Flyway
-- Lombok
-- Swagger(OpenAPI)
+#### Documentação
+- Swagger/OpenAPI (springdoc)
+#### Validação
+- Jakarta Validation
+- Bean Validation
+#### Testes
+- JUnit 5
+- Mockito
+- Spring Boot Test
 
 ## Estrutura do Baco de Dados
 
@@ -90,7 +102,7 @@ graph LR
 
 ## Pré-requisitos
 
-- JDK 17+
+- JDK 21
 
 - Maven
 
@@ -240,3 +252,11 @@ Corpo para cadastro:
 ## Migrations
 
 As migrations do banco de dados são gerenciadas pelo Flyway e ficam em `src/main/resources/db/migration`. Ao subir a aplicação, o Flyway aplica automaticamente todas as migrations pendentes.
+
+## Testes
+
+```bash
+mvn test
+# ou só uma classe específica:
+mvn test -Dtest=MensagemServiceTest
+```
