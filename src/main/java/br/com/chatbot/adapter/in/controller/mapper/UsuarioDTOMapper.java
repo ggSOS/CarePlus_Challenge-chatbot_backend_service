@@ -13,9 +13,7 @@ import br.com.chatbot.application.core.domain.model.Usuario;
 public class UsuarioDTOMapper {
     public Usuario toDomain(UsuarioCreateDTO dados) {
         return new Usuario(
-                null,
-                dados.celular(),
-                null);
+                dados);
     }
 
     public UsuarioResponseDTO toResponseDTO(Usuario dados) {

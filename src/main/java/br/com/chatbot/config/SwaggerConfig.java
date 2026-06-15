@@ -12,17 +12,21 @@ import org.springframework.util.StreamUtils;
 
 import br.com.chatbot.exception.type.swagger.READMEInvalidException;
 import br.com.chatbot.exception.type.swagger.READMENotFoundException;
+import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
+import io.swagger.v3.oas.models.security.SecurityRequirement;
+import io.swagger.v3.oas.models.security.SecurityScheme;
 
 @Configuration
 public class SwaggerConfig {
+
     @Bean
     public OpenAPI customOpenAPI() {
         String readmeContent = "";
+        final String securitySchemeName = "bearerAuth";
 
         File file = new File("./README.md");
-
         if (file.exists()) {
             try {
                 Resource resource = new FileSystemResource(file);
@@ -38,6 +42,16 @@ public class SwaggerConfig {
                 .info(new Info()
                         .title("Minha API")
                         .version("1.0.0")
-                        .description(readmeContent));
+                        .description(readmeContent))
+                .addSecurityItem(new SecurityRequirement().addList(securitySchemeName))
+                .components(new Components()
+                        .addSecuritySchemes(securitySchemeName,
+                                new SecurityScheme()
+                                        .name(securitySchemeName)
+                                        .type(SecurityScheme.Type.HTTP)
+                                        .scheme("bearer")
+                                        .bearerFormat("JWT")
+                                        .description(
+                                                "Insira APENAS o token JWT gerado no login. Não digite 'Bearer '.")));
     }
 }

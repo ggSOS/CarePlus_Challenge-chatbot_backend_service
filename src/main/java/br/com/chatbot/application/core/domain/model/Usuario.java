@@ -21,6 +21,7 @@ public class Usuario {
 
     public Usuario(UsuarioCreateDTO dados) {
         this.celular = dados.celular();
+        this.ativo = true;
     }
 
     public Long getId() {

@@ -27,7 +27,6 @@ public class UsuarioEntity {
     @Column(name = "celular")
     private String celular;
 
-    @NotNull
     @Column(name = "ativo")
     private Boolean ativo;
 }

@@ -155,6 +155,8 @@ A API utiliza autenticação via **Bearer Token JWT**. As permissões por rota s
 
 ## Endpoints
 
+> Todos os Endpoints podem ser testados pela rota do Swagger em : `http://localhost:8080/swagger-ui/index.html`
+
 ### Autenticação
 
 | Método | Rota     | Descrição                       |
